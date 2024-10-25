@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #d7d4d4;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.image {
+    background: url(https://images.unsplash.com/photo-1509114397022-ed747cca3f65?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 26rem;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    font-family: system-ui, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    height: 100vh;
+    margin: 4rem auto;
+    max-width: 600px;
+    z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.title {
+    font-size: 4rem;
+    color: whitesmoke;
+    font-family: system-ui, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 58rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    background: transparent;
+    width: 90%;
+}
+
+button {
+    border: none;
+    font-size: 3rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    font-size: 3.4rem;
+    color: #D98A85;
+}
+
+.edit {
+    position: absolute;
+    right: 8rem;
+}
+
+.delete {
+    position: absolute;
+    right: 2rem;
+}
+
+.task {
+    position: relative;
+    background: whitesmoke;
+    padding: 2rem;
+    list-style: none;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 1.8rem;
+}
+
+@media (max-width:430px) {
+    .image {
+
+        width: 134%;
+
+    }
+
+    .inputBox {
+        width: 35rem;
+    }
+
 }
